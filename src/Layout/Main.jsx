@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
-import Navbar from "../Pages/Shared/Navbar/navbar";
 import Footer from "../Pages/Shared/Footer/Footer";
 import { ToastContainer} from 'react-toastify';
+import Navbar from "../Pages/Shared/Navbar/navbar";
 const Main = () => {
     return (
         <div>

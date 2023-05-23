@@ -21,7 +21,7 @@ const Navbar = () => {
     return (
         <div className="navbar  bg-opacity bg-[#004e96]  lg:px-12 py-0 text-white">
             <div className="flex gap-2 items-center">
-                <Link to='/'><img className=" w-28 rounded-md" src={logo} alt="" /></Link>
+                <Link to='/'><img className="w-20 lg:w-28 rounded-md" src={logo} alt="" /></Link>
                 <Link to='/'><h2 className="text-xl font-bold">ToyZone</h2></Link>
             </div>
             <div className="navbar hidden lg:flex justify-center">
@@ -34,7 +34,7 @@ const Navbar = () => {
                 </ul>
             </div>
 
-            <div className="flex-none mx-auto ms-24">
+            <div className="flex-none mx-auto ms-36">
 
                 {user &&
                     <div className="dropdown dropdown-end">
