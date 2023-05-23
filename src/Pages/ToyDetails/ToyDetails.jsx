@@ -8,7 +8,11 @@ const ToyDetails = () => {
     const toyDetails = useLoaderData();
     const { sellerName, email, toy_name, img, category, price, quantity, rating, description } = toyDetails;
     return (
-        <div className="lg:p-20 my-16">
+        <div className="lg:mb-32 my-16">
+              <div className="text-center mt-14">
+                <h1 className="text-4xl  text-[#004e96] font-bold">{toy_name}</h1>
+                <p className="py-4 w-2/3 mx-auto">Shop trending RC surface categories visited by other RC vehicle and RC boat enthusiasts.</p>
+            </div>
             <div className="card lg:card-side bg-base-100 shadow-xl lg:p-20 gap-24 lg:w-9/12 mx-auto">
                 <div className="lg:mt-9">
                     <figure>

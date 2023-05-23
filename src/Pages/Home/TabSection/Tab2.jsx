@@ -24,7 +24,7 @@ const Tab2 = ({ toy2 }) => {
     return (
         <div className="my-8" data-aos="flip-up"
         data-aos-duration="1500">
-            <div className="card card-compact lg:w-96 w-4/5 mx-auto  h-[500px] bg-base-100 shadow-xl">
+            <div className="card card-compact lg:w-96 w-4/5 mx-auto  h-[450px] bg-base-100 shadow-xl">
                 <figure><img src={img} alt="Shoes" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">{toy_name}</h2>

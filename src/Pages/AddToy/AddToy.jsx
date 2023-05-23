@@ -130,7 +130,7 @@ const AddToy = () => {
 
                     </div>
                     <div className="mb-10">
-                        <input className="btn btn-block" type="submit" value="Add A Toy" />
+                        <input className="btn btn-block bg-[#004e96]" type="submit" value="Add A Toy" />
 
                     </div>
                 </form>

@@ -4,6 +4,7 @@ import 'react-tabs/style/react-tabs.css';
 import Tab1 from './Tab1';
 import Tab2 from './Tab2';
 import Tab3 from './Tab3';
+import Tab4 from './Tab4';
 
 const TabSection = () => {
     const [toys, setToys] = useState([]);
@@ -46,11 +47,14 @@ const TabSection = () => {
         } else if (index === 2) {
             setInfo('Drift');
         }
+         else if (index === 3) {
+            setInfo('RTF');
+        }
     };
 
     return (
-        <div className='container  lg:w-4/5 mx-auto lg:px-4 py-8 '>
-            <div className='my-10 mx-3' data-aos="fade-right"
+        <div className='container max-w-screen-xl mx-auto py-8'>
+            <div className='my-10 mx-3 space-y-3' data-aos="fade-right"
                 data-aos-offset="400"
                 data-aos-easing="ease-in-sine">
                 <h1 className='text-4xl font-bold text-[#004e96]'>Top RC Surface Categories</h1>
@@ -66,6 +70,9 @@ const TabSection = () => {
                     </Tab>
                     <Tab className='px-6 py-3 bg-[#004e96] rounded-lg cursor-pointer  text-white font-medium'>
                         Drift Cars
+                    </Tab>
+                    <Tab className='px-6 py-3 bg-[#004e96] rounded-lg cursor-pointer  text-white font-medium'>
+                        RTF
                     </Tab>
                 </TabList>
 
@@ -89,6 +96,13 @@ const TabSection = () => {
                     <div className='grid lg:grid-cols-3 gap-2'>
                         {toys.map((toy3) => (
                             <Tab3 key={toy3._id} toy3={toy3}></Tab3>
+                        ))}
+                    </div>
+                </TabPanel>
+                <TabPanel>
+                    <div className='grid lg:grid-cols-3 gap-2'>
+                        {toys.map((toy4) => (
+                           <Tab4 key={toy4._id} toy4={toy4}></Tab4> 
                         ))}
                     </div>
                 </TabPanel>

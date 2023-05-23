@@ -12,7 +12,7 @@ const CarCart = ({ cars }) => {
     return (
         <div data-aos="zoom-in-down"
             data-aos-duration="1000">
-            <div className="card card-compact lg:w-96 w-4/5 mx-auto  h-[500px] bg-base-100 shadow-xl">
+            <div className="card card-compact lg:w-96 w-4/5 mx-auto  h-[450px] bg-base-100 shadow-xl">
                 <figure><img src={picture} /></figure>
                 <div className="card-body font-bold">
                     <h1 className="text-[#004e96]">{model}</h1>

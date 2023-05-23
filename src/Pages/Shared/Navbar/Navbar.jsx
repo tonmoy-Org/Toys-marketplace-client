@@ -19,7 +19,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className="navbar bg-[#004e96]  lg:px-12 py-0 text-white">
+        <div className="navbar  bg-opacity bg-[#004e96]  lg:px-12 py-0 text-white">
             <div className="flex gap-2 items-center">
                 <Link to='/'><img className=" w-28 rounded-md" src={logo} alt="" /></Link>
                 <Link to='/'><h2 className="text-xl font-bold">ToyZone</h2></Link>

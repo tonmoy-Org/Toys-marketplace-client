@@ -1,78 +1,90 @@
-import car1 from '../../../assets/car/car-1.jpg'
-import car2 from '../../../assets/car/car-2.jpg'
-import car3 from '../../../assets/car/car-3.jpg'
-import car4 from '../../../assets/car/car-4.jpg'
+import moment from 'moment';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+
+// import required modules
+import { Autoplay, Pagination, Navigation } from "swiper";
+import car9 from '../../../assets/car/car-9.jpg'
+import car8 from '../../../assets/car/car-8.jpg'
+import car7 from '../../../assets/car/car-7.jpg'
+import car6 from '../../../assets/car/car-6.jpg'
+import car5 from '../../../assets/car/car-5.jpg'
 
 const Banner = () => {
     return (
-        <div className="carousel w-full">
-            <div id="slide1" className="carousel-item relative w-full" style={{ height: '580px' }}>
-                <div className="relative w-full">
-                    <img src={car4} className="w-full brightness-75" style={{ height: '580px' }} />
-                    <div className="absolute bottom-1/4 lg:left-32 left-4">
-                        <h2 className="text-white  md:text-5xl text-3xl mb-4 font-bold">MegaMoto GTR</h2>
-                        <p className="text-white font-semibold">These names are designed to evoke a sense of speed, power,  and excitement commonly <br /> associated with RC cars.</p>
-                        <button className="btn glass mt-4">Explore Now</button>
+        <div className="text-white">
+            <Swiper
+                spaceBetween={30}
+                centeredSlides={true}
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }}
+                pagination={{
+                    clickable: true,
+                }}
+                navigation={true}
+                modules={[Autoplay, Pagination, Navigation]}
+                className="mySwiper"
+            >
+                <SwiperSlide>
+                    <img className="w-full h-full" src={car5} alt="" />
+                    <div className="px-32 space-y-4 lg:visible invisible absolute bottom-28">
+                        <h1 className="text-3xl">Charge, Bash, Repeat</h1>
+                        <p className="md:w-2/3">Electric vehicles combine incredible acceleration and speed with charge and go convenience!</p>
+                        <p>Pre-Orders Due {moment().format('l')}</p>
+                        <br />
+                        <button className="btn glass">Order Now</button>
                     </div>
-                </div>
-                <div className='hidden sm:hidden md:hidden lg:inline-block'>
-                    <div className="absolute flex justify-between  transform -translate-y-1/2 left-5 right-5 top-1/2 ">
-                        <a href="#slide4" className="btn btn-circle">❮</a>
-                        <a href="#slide2" className="btn btn-circle">❯</a>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img className="w-full" src={car6} alt="" />
+                    <div className="px-32 space-y-4 lg:visible invisible absolute bottom-28 ">
+                        <h1 className="text-3xl">Blade 150 FX RTF</h1>
+                        <p className="md:w-2/3">The Blade 150 FX is the perfect indoor and outdoor helicopter for beginner pilots ready to try single-rotor machines from coaxial helicopters and multirotor drones.</p>
+                        <p>Pre-Orders Due {moment().format('l')}</p>
+                        <br />
+                        <button className="btn glass">Order Now</button>
                     </div>
-                </div>
-            </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img className="w-full" src={car7} alt="" />
+                    <div className="px-32 space-y-4 lg:visible invisible absolute bottom-28">
+                        <h1 className="text-3xl">Shop Airplanes by Skill Level</h1>
+                        <p className="md:w-2/3">Explore the world of flight with aircraft covering all skill levels. Models featuring exclusive AS3X and SAFE technology make learning to fly even easier!</p>
+                        <p>Pre-Orders Due {moment().format('l')}</p>
+                        <br />
+                        <button className="btn glass">Order Now</button>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img className="w-full" src={car8} alt="" />
+                    <div className="px-32 space-y-4 lg:visible invisible absolute bottom-28">
+                        <h1 className="text-3xl">In Stock & Ready for Patrol</h1>
+                        <p className="md:w-2/3">The new Pro Boat 1/25 scale PCF Mk I boat is ready-to-run and filled with display-worthy detail for Vietnam vets and history buffs to admire!</p>
+                        <p>Pre-Orders Due {moment().format('l')}</p>
+                        <br />
+                        <button className="btn glass">Order Now</button>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide className='mb-10'>
+                    <img className="w-full" src={car9} alt="" />
+                    <div className="px-32 space-y-4 lg:visible invisible absolute bottom-28">
+                        <h1 className="text-3xl ">40% Savings Has Returned!</h1>
+                        <p className="md:w-2/3">Back by popular demand save up to 40% on Athearn locomotives and rolling stock! There has never been a better time to add to your roster!</p>
+                        <p>Pre-Orders Due {moment().format('l')}</p>
+                        <br />
+                        <button className="btn glass">Order Now</button>
+                    </div>
+                </SwiperSlide>
 
-            <div id="slide2" className="carousel-item relative w-full" style={{ height: '580px' }}>
-                <div className="relative w-full">
-                    <img src={car2} className="w-full brightness-75" style={{ height: '580px' }} />
-                    <div className="absolute bottom-1/4 lg:left-32 left-4">
-                        <h2 className="text-white  md:text-5xl text-3xl mb-4 font-bold">ThunderBolt RDX</h2>
-                        <p className="text-white font-semibold">These names are designed to evoke a sense of speed, power,  and excitement commonly <br /> associated with RC cars.</p>
-                        <button className="btn glass mt-4">Explore Now</button>
-                    </div>
-                </div>
-                <div className='hidden sm:hidden md:hidden lg:inline-block'>
-                    <div className="absolute flex justify-between  transform -translate-y-1/2 left-5 right-5 top-1/2 ">
-                        <a href="#slide1" className="btn btn-circle">❮</a>
-                        <a href="#slide3" className="btn btn-circle">❯</a>
-                    </div>
-                </div>
-            </div>
-
-            <div id="slide3" className="carousel-item relative w-full" style={{ height: '580px' }}>
-                <div className="relative w-full">
-                    <img src={car3} className="w-full brightness-75" style={{ height: '580px' }} />
-                    <div className="absolute bottom-1/4 lg:left-32 left-4">
-                        <h2 className="text-white  md:text-5xl text-3xl mb-4 font-bold">FlashFire SRT</h2>
-                        <p className="text-white font-semibold">These names are designed to evoke a sense of speed, power,  and excitement commonly <br /> associated with RC cars.</p>
-                        <button className="btn glass mt-4">Explore Now</button>
-                    </div>
-                </div>
-                <div className='hidden sm:hidden md:hidden lg:inline-block'>
-                    <div className="absolute flex justify-between  transform -translate-y-1/2 left-5 right-5 top-1/2 ">
-                        <a href="#slide2" className="btn btn-circle">❮</a>
-                        <a href="#slide4" className="btn btn-circle">❯</a>
-                    </div>
-                </div>
-            </div>
-
-            <div id="slide4" className="carousel-item relative w-full" style={{ height: '580px' }}>
-                <div className="relative w-full">
-                    <img src={car1} className="w-full brightness-75" style={{ height: '580px' }} />
-                    <div className="absolute bottom-1/4 lg:left-32 left-4">
-                        <h2 className="text-white  md:text-5xl text-3xl mb-4 font-bold">TurboRacer X9</h2>
-                        <p className="text-white font-semibold">These names are designed to evoke a sense of speed, power,  and excitement commonly <br /> associated with RC cars.</p>
-                        <button className="btn glass mt-4">Explore Now</button>
-                    </div>
-                </div>
-                <div className='hidden sm:hidden md:hidden lg:inline-block'>
-                    <div className="absolute flex justify-between  transform -translate-y-1/2 left-5 right-5 top-1/2 ">
-                        <a href="#slide3" className="btn btn-circle">❮</a>
-                        <a href="#slide1" className="btn btn-circle">❯</a>
-                    </div>
-                </div>
-            </div>
+            </Swiper>
         </div>
     );
 };

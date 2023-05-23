@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2/dist/sweetalert2.js'
 import 'sweetalert2/src/sweetalert2.scss'
 import { AuthContext } from '../../../providers/AuthProvider';
-const Tab3 = ({ toy3 }) => {
-    const { _id, toy_name, img, price, rating } = toy3;
-    const { user } = useContext(AuthContext);
 
+const Tab4 = ({ toy4 }) => {
+    const { _id, toy_name, img, price, rating } = toy4;
+    const { user } = useContext(AuthContext);
 
     const handleNotify = () => {
         if (!user) {
@@ -20,7 +20,6 @@ const Tab3 = ({ toy3 }) => {
             })
         }
     }
-
     return (
         <div className="my-8" data-aos="flip-right"
             data-aos-duration="1500">
@@ -43,4 +42,4 @@ const Tab3 = ({ toy3 }) => {
     );
 };
 
-export default Tab3;
+export default Tab4;
