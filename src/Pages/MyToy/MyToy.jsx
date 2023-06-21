@@ -13,7 +13,7 @@ const MyToy = () => {
     const [sortOrder, setSortOrder] = useState('desc');
 
     useEffect(() => {
-        const url = `https://toy-marketplace-server-phi.vercel.app/addToys?email=${user?.email}&sort=${sortField}&order=${sortOrder}`;
+        const url = `https://toys-marketplace-server-neon.vercel.app/addToys?email=${user?.email}&sort=${sortField}&order=${sortOrder}`;
         fetch(url)
             .then(res => res.json())
             .then(data => {
@@ -32,7 +32,7 @@ const MyToy = () => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`https://toy-marketplace-server-phi.vercel.app/addToys/${id}`, {
+                fetch(`https://toys-marketplace-server-neon.vercel.app/addToys/${id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())

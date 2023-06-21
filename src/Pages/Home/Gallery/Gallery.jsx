@@ -5,7 +5,7 @@ const Gallery = () => {
     const [gallery, setGallery] = useState([]);
 
     useEffect(() => {
-        fetch('https://toy-marketplace-server-phi.vercel.app/gallery')
+        fetch('https://toys-marketplace-server-neon.vercel.app/gallery')
             .then(res => res.json())
             .then(data => setGallery(data))
     }, [])

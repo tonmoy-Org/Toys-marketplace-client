@@ -14,7 +14,7 @@ const AllToys = () => {
         const searchValue = event.target.search.value;
         setIsSearching(true);
 
-        fetch(`https://toy-marketplace-server-phi.vercel.app/addToys?toy_name=${searchValue}`)
+        fetch(`https://toys-marketplace-server-neon.vercel.app/addToys?toy_name=${searchValue}`)
             .then((res) => res.json())
             .then((data) => {
                 setSearchResults(data);

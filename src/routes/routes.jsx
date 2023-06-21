@@ -36,7 +36,7 @@ const router = createBrowserRouter([
             {
                 path: 'allToys',
                 element: <AllToys></AllToys>,
-                loader: () => fetch('https://toy-marketplace-server-phi.vercel.app/addToys')
+                loader: () => fetch('https://toys-marketplace-server-neon.vercel.app/addToys')
             },
             {
                 path: 'myToy',
@@ -45,7 +45,7 @@ const router = createBrowserRouter([
             {
                 path:'toyDetails/:id',
                 element: <PrivateRoutes><ToyDetails></ToyDetails></PrivateRoutes>,
-                loader: ({params}) => fetch(`https://toy-marketplace-server-phi.vercel.app/addToys/${params.id}`)
+                loader: ({params}) => fetch(`https://toys-marketplace-server-neon.vercel.app/addToys/${params.id}`)
             },
             {
                 path: 'blogs',

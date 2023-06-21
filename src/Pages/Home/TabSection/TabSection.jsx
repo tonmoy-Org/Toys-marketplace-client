@@ -14,7 +14,7 @@ const TabSection = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch(`https://toy-marketplace-server-phi.vercel.app/addToys?category=${info}`);
+                const response = await fetch(`https://toys-marketplace-server-neon.vercel.app/addToys?category=${info}`);
                 const data = await response.json();
                 setToys(data);
             } catch (error) {
@@ -28,7 +28,7 @@ const TabSection = () => {
     useEffect(() => {
         const fetchDefaultData = async () => {
             try {
-                const response = await fetch(`https://toy-marketplace-server-phi.vercel.app/addToys?category=${info}`);
+                const response = await fetch(`https://toys-marketplace-server-neon.vercel.app/addToys?category=${info}`);
                 const data = await response.json();
                 setToys(data);
             } catch (error) {

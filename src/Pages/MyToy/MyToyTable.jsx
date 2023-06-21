@@ -19,7 +19,7 @@ const MyToyTable = ({ toy, handleDeleteToy }) => {
         const updateToysInfo = { price, quantity, description };
         console.log(updateToysInfo);
 
-        fetch(`https://toy-marketplace-server-phi.vercel.app/addToys/${_id}`, {
+        fetch(`https://toys-marketplace-server-neon.vercel.app/addToys/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
