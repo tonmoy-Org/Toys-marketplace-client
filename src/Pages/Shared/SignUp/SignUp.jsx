@@ -63,10 +63,10 @@ const SignUp = () => {
             })
     }
     return (
-        <div className="hero  min-h-screen bg-base-200">
-            <div className="hero-content flex-col lg:w-6/12">
-                <h1 className="text-2xl font-semibold text-[#004e96]">Make the most of your joy full life  with ToyZone</h1>
-                <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 ">
+        <div className="lg:hero  min-h-screen bg-base-100 py-28">
+            <div className="lg:hero-content flex-col lg:w-6/12">
+                <h1 className="text-2xl font-semibold text-[#004e96] px-5">Make the most of your joy full life  with ToyZone</h1>
+                <div className="card flex-shrink-0 w-full max-w-sm lg:shadow-2xl bg-base-100 rounded-none">
                     <div className="card-body">
                         <div className="text-center">
                             <h1 className="text-3xl font-bold">Register Now</h1>
@@ -76,24 +76,24 @@ const SignUp = () => {
                                 <label className="label">
                                     <span className="label-text">Name</span>
                                 </label>
-                                <input type="text" name="name" placeholder="name" className="input input-bordered" required />
+                                <input type="text" name="name" placeholder="name" className="input input-bordered rounded-none" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Email</span>
                                 </label>
-                                <input type="email" name="email" placeholder="email" className="input input-bordered" required />
+                                <input type="email" name="email" placeholder="email" className="input input-bordered rounded-none" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Photo URL</span>
                                 </label>
-                                <input type="text" name="photo" placeholder="photo" className="input input-bordered" required />
+                                <input type="text" name="photo" placeholder="photo" className="input input-bordered rounded-none" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Password</span>
-                                    <small className='text-blue-600' onClick={() => setShow(!show)}>
+                                    <small className='text-[#004e96] font-semibold' onClick={() => setShow(!show)}>
                                         <>
                                             {
                                                 show ? <span>Hide</span> : <span>Show</span>
@@ -101,16 +101,16 @@ const SignUp = () => {
                                         </>
                                     </small>
                                 </label>
-                                <input type={show ? "text" : "password"} name='password' placeholder="password" className="input input-bordered" required />
+                                <input type={show ? "text" : "password"} name='password' placeholder="password" className="input input-bordered rounded-none" required />
                                 <label className="label">
                                     <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                                 </label>
                             </div>
                             <div className="form-control mt-6">
-                                <input className="btn btn-success text-white" type="submit" value="Sign Up" />
+                                <input className="btn bg-[#004e96] hover:bg-[#004e96] rounded-none text-white" type="submit" value="Sign Up" />
                             </div>
                         </form>
-                        <p>Already to ToyZone ? <Link className="text-primary" to="/login">logIn</Link></p>
+                        <p>Already to ToyZone ? <Link className="text-[#004e96] font-semibold" to="/login">logIn</Link></p>
                         <p className="text-red-600 py-3">{error}</p>
                     </div>
                 </div>

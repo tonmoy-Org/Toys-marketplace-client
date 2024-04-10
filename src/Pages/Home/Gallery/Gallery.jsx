@@ -20,7 +20,7 @@ const Gallery = () => {
                     RC cars come in a variety of shapes and sizes, and can be made to look like real cars, <br />  trucks, boats, or even airplanes. They can be simple or complex, and can be used by people of all ages.
                 </p>
             </div>
-            <div className="grid lg:grid-cols-3 gap-10 max-w-screen-xl mx-auto my-16">
+            <div className="grid lg:grid-cols-5 gap-5 max-w-screen-xl mx-auto my-10">
                 {
                     gallery.map(cars =>
                         <CarCart

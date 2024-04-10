@@ -3,10 +3,12 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import Swal from 'sweetalert2/dist/sweetalert2.js'
 import 'sweetalert2/src/sweetalert2.scss'
+import { Rating } from "@smastrom/react-rating";
 
-const ToyTable = ({ toys, index }) => {
+const ToyTable = ({ toys }) => {
     const { user } = useContext(AuthContext);
-    const { _id, sellerName, toy_name, category, price, quantity } = toys;
+    const { _id, toy_name, price, img } = toys;
+    console.log(toys)
 
     const handleNotify = () => {
         if (!user) {
@@ -19,17 +21,23 @@ const ToyTable = ({ toys, index }) => {
         }
     }
     return (
-        <tr>
-            <th>{index}</th>
-            <th>{sellerName}</th>
-            <th>{toy_name}</th>
-            <th>{category}</th>
-            <th>${price}</th>
-            <th>{quantity}</th>
-            <th>
-                <Link to={`/toyDetails/${_id}`}><button onClick={handleNotify} className="btn btn-sm">VIEW DETAILS </button></Link>
-            </th>
-        </tr>
+        <div>
+            <div className="card card-compact lg:w-72 w-4/5 mx-auto  h-[350px] bg-base-100 shadow-xl rounded-none">
+                <figure><img src={img} alt="Shoes" /></figure>
+                <div className="card-body">
+                    <h2 className="card-title">{toy_name}</h2>
+                    <p className='text-xl'>Price: $<span className=' text-orange-400'>{price}</span></p>
+                    <p><Rating
+                        style={{ maxWidth: 110 }}
+                        value={3}
+                        readOnly />
+                    </p>
+                    <div className="card-actions justify-end">
+                        <Link to={`/toyDetails/${_id}`}><button onClick={handleNotify} className="btn btn-sm rounded-none">VIEW DETAILS </button></Link>
+                    </div>
+                </div>
+            </div>
+        </div>
     );
 };
 

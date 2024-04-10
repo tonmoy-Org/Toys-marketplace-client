@@ -60,29 +60,32 @@ const MyToy = () => {
     };
 
     return (
-        <div className="lg:mx-12 my-10">
+        <div className="py-28">
             <div className="text-center">
                 <h1 className="text-4xl  text-[#004e96] font-bold">My Toys</h1>
                 <p className="py-4">Get peak performance out of your favorite models - Spektrum Smart Technology is <br /> about offering a higher connection to your hobby.</p>
             </div>
-            <div className="overflow-x-auto w-full text-right ">
-                <div className="mb-4 my-10">
-                    <label className="mr-2 text-xl font-medium">Sort By:</label>
-                    <select
-                        className="px-5 py-1 border rounded"
-                        value={`${sortField}-${sortOrder}`}
-                        onChange={handleSortChange}
-                    >
-                        <option className=" font-semibold" value="price-desc">Price Ascending</option>
-                        <option className=" font-semibold" value="price-asc">Price Descending</option>
+            <div>
+                <div className="flex justify-between mx-20 items-center">
+                    <div>
+                        <h1 className="text-2xl  text-[#004e96] font-semibold">RC Car</h1>
+                    </div>
+                    <div className="mb-4 my-10">
+                        <label className="mr-2 text-xl font-medium">Sort By:</label>
+                        <select
+                            className="px-5 py-1 border rounded"
+                            value={`${sortField}-${sortOrder}`}
+                            onChange={handleSortChange}
+                        >
+                            <option className=" font-semibold" value="price-desc">Price Ascending</option>
+                            <option className=" font-semibold" value="price-asc">Price Descending</option>
 
-                    </select>
+                        </select>
+                    </div>
                 </div>
-                <table className="table w-full mt-10">
-                    {/* head */}
-                    <thead>
+                <table className="table table-sm text-sm mx-auto rounded-none">
+                    <thead className="rounded-none">
                         <tr>
-                            <th></th>
                             <th>Toy Name</th>
                             <th>Seller Name / Email</th>
                             <th>Sub-category</th>

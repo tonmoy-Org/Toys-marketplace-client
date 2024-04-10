@@ -42,18 +42,15 @@ const MyToyTable = ({ toy, handleDeleteToy }) => {
     return (
         <tr>
             <td>
-                <div className="flex items-center space-x-3">
-                    <div className="avatar">
-                        <div className=" w-28 h-28">
-                            <img src={img} alt="Avatar Tailwind CSS Component" />
-                        </div>
+                <div className="">
+                    <div className=" w-20 h-20">
+                        <img src={img} alt="Avatar Tailwind CSS Component" />
                     </div>
                     <div>
-
+                        <div className="text-sm">{toy_name}</div>
                     </div>
                 </div>
             </td>
-            <td> <div className="font-bold">{toy_name}</div></td>
             <td>
                 <div className="font-bold">{sellerName}</div>
                 <div className="text-sm opacity-50">{email}</div>
@@ -93,7 +90,7 @@ const MyToyTable = ({ toy, handleDeleteToy }) => {
                                         <label className="label">
                                             <span className="label-text">Price</span>
                                         </label>
-                                        <input type="text" name="price" placeholder="price" className="input input-bordered" required/>
+                                        <input type="text" name="price" placeholder="price" className="input input-bordered" required />
                                     </div>
                                     <div className="form-control">
                                         <label className="label">

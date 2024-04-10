@@ -57,7 +57,7 @@ const AddToy = () => {
     }
     return (
         <div>
-            <div className="text-center my-8">
+            <div className="text-center py-28">
                 <h1 className="text-4xl  text-[#004e96] font-bold">Add Toys</h1>
                 <p className="py-4">Get peak performance out of your favorite models - Spektrum Smart Technology is <br /> about offering a higher connection to your hobby.</p>
             </div>
@@ -69,7 +69,7 @@ const AddToy = () => {
                             <label className="label">
                                 <span className="label-text">Photo Url</span>
                             </label>
-                            <input type="text" name="photo" placeholder="photo url" className="input input-bordered" required/>
+                            <input type="text" name="photo" placeholder="photo url" className="input input-bordered rounded-none" required/>
                         </div>
 
                     </div>
@@ -78,19 +78,19 @@ const AddToy = () => {
                             <label className="label">
                                 <span className="label-text">Name</span>
                             </label>
-                            <input type="text" name="name" placeholder="name" className="input input-bordered" required/>
+                            <input type="text" name="name" placeholder="name" className="input input-bordered rounded-none" required/>
                         </div>
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Seller name</span>
                             </label>
-                            <input type="text" defaultValue={user?.displayName} name="sellerName" placeholder="seller name" className="input input-bordered" />
+                            <input type="text" defaultValue={user?.displayName} name="sellerName" placeholder="seller name" className="input input-bordered rounded-none" />
                         </div>
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Seller Email</span>
                             </label>
-                            <input type="text" defaultValue={user?.email} name="sellerEmail" placeholder="seller Email" className="input input-bordered" />
+                            <input type="text" defaultValue={user?.email} name="sellerEmail" placeholder="seller Email" className="input input-bordered rounded-none" />
                         </div>
                     </div>
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mb-10">
@@ -98,19 +98,19 @@ const AddToy = () => {
                             <label className="label">
                                 <span className="label-text">Sub-category</span>
                             </label>
-                            <input type="text" name="category" placeholder="sub-category" className="input input-bordered" />
+                            <input type="text" name="category" placeholder="sub-category" className="input input-bordered rounded-none" />
                         </div>
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Price</span>
                             </label>
-                            <input type="text" name="price" placeholder="price" className="input input-bordered" required/>
+                            <input type="text" name="price" placeholder="price" className="input input-bordered rounded-none" required/>
                         </div>
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Rating</span>
                             </label>
-                            <input type="text" name="rating" placeholder="rating" className="input input-bordered" />
+                            <input type="text" name="rating" placeholder="rating" className="input input-bordered rounded-none" />
                         </div>
 
                     </div>
@@ -119,18 +119,18 @@ const AddToy = () => {
                             <label className="label">
                                 <span className="label-text">Available quantity</span>
                             </label>
-                            <input type="text" name="quantity" placeholder="available quantity" className="input input-bordered" />
+                            <input type="text" name="quantity" placeholder="available quantity" className="input input-bordered rounded-none" />
                         </div>
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Detail description</span>
                             </label>
-                            <input type="text" name="description" placeholder="detail description" className="input input-bordered" />
+                            <input type="text" name="description" placeholder="detail description" className="input input-bordered rounded-none" />
                         </div>
 
                     </div>
                     <div className="mb-10">
-                        <input className="btn btn-block bg-[#004e96]" type="submit" value="Add A Toy" />
+                        <input className="btn btn-block bg-[#004e96] hover:bg-[#004e96] rounded-none" type="submit" value="Add A Toy" />
 
                     </div>
                 </form>

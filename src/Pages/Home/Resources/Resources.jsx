@@ -25,7 +25,7 @@ const Resources = () => {
                             <h2 className="card-title">My Bench</h2>
                             <p>Log in to your account to create and save custom build projects to My Bench, using Part Finder.</p>
                             <div className="pt-6">
-                                <button className="btn btn-outline btn-primary">Create Project</button>
+                                <button className="btn btn-outline rounded-none btn-primary hover:bg-[#004e96] ">Create Project</button>
                             </div>
                         </div>
                     </div>
@@ -39,7 +39,7 @@ const Resources = () => {
                             <h2 className="card-title">Part Finder</h2>
                             <p>Search for parts and accessories to complete or upgrade your product.</p>
                             <div className="pt-6">
-                                <button className="btn btn-outline btn-primary">Search Now</button>
+                                <button className="btn btn-outline rounded-none btn-primary hover:bg-[#004e96] ">Search Now</button>
                             </div>
                         </div>
                     </div>
@@ -52,7 +52,7 @@ const Resources = () => {
                             <h2 className="card-title">Product Registration</h2>
                             <p>Register your products with us! Log in to your account to get started.</p>
                             <div className="pt-6">
-                                <button className="btn btn-outline btn-primary">Register Now</button>
+                                <button className="btn btn-outline rounded-none btn-primary hover:bg-[#004e96] ">Register Now</button>
                             </div>
                         </div>
                     </div>

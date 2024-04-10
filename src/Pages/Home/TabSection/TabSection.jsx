@@ -61,17 +61,17 @@ const TabSection = () => {
                 <p>Shop trending RC surface categories visited by other RC vehicle and RC boat enthusiasts</p>
             </div>
             <Tabs onSelect={handleTabSelect}>
-                <TabList className='flex lg:gap-10 gap-2 justify-center bg-gray-200 rounded-lg'>
-                    <Tab className='px-6 py-3 bg-[#004e96]  rounded-lg cursor-pointer text-white font-medium'>
+                <TabList className='flex lg:gap-10 gap-2 justify-center bg-gray-200 rounded-none py-3'>
+                    <Tab className='px-6 py-3 bg-[#004e96]  rounded-none cursor-pointer text-white font-medium'>
                         Rock Crawlers
                     </Tab>
-                    <Tab className='px-6 py-3 bg-[#004e96]  rounded-lg cursor-pointer text-white font-medium'>
+                    <Tab className='px-6 py-3 bg-[#004e96]  rounded-none cursor-pointer text-white font-medium'>
                         Monster Trucks
                     </Tab>
-                    <Tab className='px-6 py-3 bg-[#004e96] rounded-lg cursor-pointer  text-white font-medium'>
+                    <Tab className='px-6 py-3 bg-[#004e96] rounded-none cursor-pointer  text-white font-medium'>
                         Drift Cars
                     </Tab>
-                    <Tab className='px-6 py-3 bg-[#004e96] rounded-lg cursor-pointer  text-white font-medium'>
+                    <Tab className='px-6 py-3 bg-[#004e96] rounded-none cursor-pointer  text-white font-medium'>
                         RTF
                     </Tab>
                 </TabList>

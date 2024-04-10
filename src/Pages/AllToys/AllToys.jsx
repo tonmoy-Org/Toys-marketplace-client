@@ -30,44 +30,25 @@ const AllToys = () => {
     };
 
     return (
-        <div className="lg:mx-20 my-16">
+        <div className="py-28 px-6 bg-base-100">
             <div className="text-center">
                 <h1 className="text-4xl  text-[#004e96] font-bold">All Toys</h1>
                 <p className="py-4">Get peak performance out of your favorite models - Spektrum Smart Technology is <br /> about offering a higher connection to your hobby.</p>
             </div>
-            <div className="grid lg:grid-cols-2 lg:space-x-64 my-14">
-                <h1 className="mx-10 text-2xl text-[#004e96] font-semibold py-4">
-                    Search Your Favorite Toys
-                </h1>
-                <div className="">
-                    <form onSubmit={handleSearch}>
-                        <input
-                            type="text"
-                            name="search"
-                            placeholder="Type here"
-                            className="input input-bordered w-full max-w-xs"
-                        />
-                        <input className="btn btn-success text-white" type="submit" value="Search" />
-                    </form>
-                </div>
+            <div className="flex justify-between items-center bg-base-200    p-2 my-5">
+                <h1 className="text-2xl font-semibold  text-[#004e96]">Search Your Favorite Toys</h1>
+                <form className="flex" onSubmit={handleSearch}>
+                    <input
+                        type="text"
+                        name="search"
+                        placeholder="Type here"
+                        className="input focus:outline-none rounded-none"
+                    />
+                    <input className="btn bg-[#004e96] hover:bg-[#004e96] rounded-none text-white" type="submit" value="Search" />
+                </form>
             </div>
-
-            <div className="overflow-x-auto">
-                <table className="table table-zebra w-full">
-                    {/* head */}
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th>Seller</th>
-                            <th>Toy Name</th>
-                            <th>Sub-category</th>
-                            <th>Price</th>
-                            <th>Available Quantity</th>
-                            <th>View Details button</th>
-                        </tr>
-                    </thead>
-                    <tbody>{renderTableData()}</tbody>
-                </table>
+            <div className="grid grid-cols-5 gap-5">
+                {renderTableData()}
             </div>
         </div>
     );

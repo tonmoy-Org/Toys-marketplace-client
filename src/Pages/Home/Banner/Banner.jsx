@@ -18,7 +18,7 @@ import car5 from '../../../assets/car/car-5.jpg'
 
 const Banner = () => {
     return (
-        <div className="text-white">
+        <div className="text-white pt-20">
             <Swiper
                 spaceBetween={30}
                 centeredSlides={true}
