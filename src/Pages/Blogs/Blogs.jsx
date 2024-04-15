@@ -4,7 +4,7 @@ import Title from "../../hooks/Title";
 const Blogs = () => {
     Title('Blogs')
     return (
-        <div className="lg:p-20 mx-3">
+        <div className="lg:px-20 py-28 mx-3">
             <div className="text-center mb-5">
                 <h1 className="text-4xl  text-[#004e96] font-bold">Blogs</h1>
                 <p className="py-4">Get peak performance out of your favorite models - Spektrum Smart Technology is <br /> about offering a higher connection to your hobby.</p>
