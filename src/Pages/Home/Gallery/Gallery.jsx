@@ -16,11 +16,11 @@ const Gallery = () => {
                 data-aos-duration="1000">
                 <h1 className="text-4xl font-bold text-[#004e96]">Cars Gallery</h1>
                 <br />
-                <p>
+                <p className="text-sm px-5">
                     RC cars come in a variety of shapes and sizes, and can be made to look like real cars, <br />  trucks, boats, or even airplanes. They can be simple or complex, and can be used by people of all ages.
                 </p>
             </div>
-            <div className="grid lg:grid-cols-5 gap-5 max-w-screen-xl mx-auto my-10">
+            <div className="grid grid-cols-2 lg:grid-cols-5 lg:gap-5 gap-3 max-w-screen-xl my-10 mx-3">
                 {
                     gallery.map(cars =>
                         <CarCart

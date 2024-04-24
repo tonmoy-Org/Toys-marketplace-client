@@ -34,7 +34,7 @@ const Navbar = () => {
                 </ul>
             </div>
 
-            <div className="flex-none mx-auto ms-36">
+            <div className="lg:flex-none lg:mx-auto lg:ms-36 ps-32 lg:ps-0">
                 {user &&
                     <div className="dropdown dropdown-end">
                         <label tabIndex={0} className="btn btn-ghost btn-circle avatar">

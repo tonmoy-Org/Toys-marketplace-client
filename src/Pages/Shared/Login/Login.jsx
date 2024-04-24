@@ -114,13 +114,13 @@ const Login = () => {
                         <br />
                         <div className="mb-5">
                             <div>
-                                <button onClick={handleGoogleLogin} className="flex items-center gap-4 justify-center border-2 px-28 py-2 border-gray-300 rounded-sm">
+                                <button onClick={handleGoogleLogin} className="flex w-full lg:72 items-center gap-4 justify-center border-2 px-28 py-1 border-gray-300 rounded-sm">
                                     <img className="w-8 h-8 rounded-full" src={google} alt="" />
                                     <p className="text-base">Google</p>
                                 </button>
                             </div>
                             <div className="mt-3">
-                                <button onClick={handleFacebookLogin} className="flex items-center gap-4 justify-center border-2 px-28 py-2 border-gray-300 rounded-sm">
+                                <button onClick={handleFacebookLogin} className="flex w-full lg:72 items-center gap-4 justify-center border-2 px-28 py-2 border-gray-300 rounded-sm">
                                     <img className="w-8 h-8 rounded-full" src={facebook} alt="" />
                                     <p className="text-base">Facebook</p>
                                 </button>

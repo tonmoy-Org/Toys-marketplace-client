@@ -9,7 +9,7 @@ const Resources = () => {
                 data-aos-duration="1000">
                 <h1 className="text-4xl font-bold text-[#004e96]">Get the Most out of Your Hobby</h1>
                 <br />
-                <p>
+                <p className='px-5 text-sm'>
                     Invest in your RC Airplane, RC Car or Truck, RC Heli, <br /> RC Boat or RC Accessory with resources from Horizon Hobby.
                 </p>
             </div>
