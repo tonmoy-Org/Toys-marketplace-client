@@ -6,7 +6,7 @@ const CarCart = ({ cars }) => {
     return (
         <div data-aos="zoom-in-down"
             data-aos-duration="1000"
-            className="w-40 mx-auto">
+            className="w-40 lg:w-full">
             <div className="shadow-xl">
                 <figure><img className="w-full" src={image} /></figure>
             </div>
